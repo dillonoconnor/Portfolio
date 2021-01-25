@@ -1,18 +1,15 @@
 <nav class="flex mt-6 items-end">
-  <h1 class="text-white text-4xl font-jaldi font-bold flex-grow">dillon o'connor</h1>
+  <h1 class="text-gray-300 text-4xl font-jaldi font-bold flex-grow">dillon o'connor</h1>
   <%= mail_to "oconnor.dillon8@gmail.com",
-              class: "opacity-75 hover:opacity-100 
-              transition duration-250 mx-1" do %>
+              class: "btn transition duration-200" do %>
     <%= content_tag(:i, "", class: "fas fa-envelope-square text-3xl text-white") %>
   <% end %>
   <%= link_to "https://github.com/dillonoconnor",
-              class: "opacity-75 hover:opacity-100 
-              transition duration-250 mx-1" do %>
+              class: "btn transition duration-200" do %>
     <%= content_tag(:i, "", class: "fab fa-github-square text-3xl text-white") %>
   <% end %>
   <%= link_to "https://www.linkedin.com/in/dillonoconnor/",
-              class: "opacity-75 hover:opacity-100 
-              transition duration-250 mx-1" do %>
+              class: "btn transition duration-200" do %>
     <%= content_tag(:i, "", class: "fab fa-linkedin text-3xl text-white") %>
   <% end %>
 </nav>

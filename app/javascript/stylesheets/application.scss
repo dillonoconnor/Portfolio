@@ -2,4 +2,32 @@
 @import "tailwindcss/components";
 
 /* Add any custom CSS here */
+.btn {
+  @apply opacity-75 mx-1.5;
+}
+
+.btn:hover {
+  @apply opacity-100;
+}
+
+.card {
+  @apply col-span-3 xl:col-span-2 flex flex-wrap xl:flex-nowrap xl:max-h-72 p-8 items-center bg-white bg-opacity-5;
+}
+
+.card-image-container {
+  @apply xl:flex-none justify-start h-36 w-full xl:w-1/4 relative overflow-hidden rounded-md;
+}
+
+.card-text-container {
+  @apply flex flex-auto flex-wrap items-center content-center h-auto xl:min-h-full p-6 relative;
+}
+
+.outlink {
+  @apply flex justify-center items-center p-2 text-gray-300 border-2 border-white border-opacity-30 rounded-lg font-sourcesans font-light;
+}
+
+.outlink:hover {
+  @apply bg-gray-700;
+}
+
 @import "tailwindcss/utilities";
