@@ -35,7 +35,7 @@
           <li>Listen to tracks on Spotify or YouTube</li>
         </ul>
         <%= link_to "Check It Out", "https://ancient-forest-35389.herokuapp.com/", 
-                    class: "outlink absolute bottom-0 right-0" %>
+                    class: "outlink absolute bottom-0 right-0 transition duration-200" %>
       </div>
     </article>
     <article class="card">
@@ -48,7 +48,7 @@
           A simple Chinese-English dictionary based on <%= link_to "CC-CEDICT", "https://cc-cedict.org/wiki/", class: "underline text-blue-300" %>.
         </p>
         <%= link_to "Check It Out", "https://morning-oasis-87823.herokuapp.com/", 
-                    class: "outlink position absolute bottom-0 right-0" %>
+                    class: "outlink position absolute bottom-0 right-0 transition duration-200" %>
       </div>
     </article>
     <article class="card">
@@ -61,11 +61,12 @@
           An Air Quality Index (AQI) monitoring tool, powered by data from the 
           <%= link_to content_tag(:span, "World Air Quality Index", class:"italic"), "https://aqicn.org/contact/", class: "underline text-blue-300" %> project.
         </p>
-        <%= link_to "Check It Out", "https://fathomless-retreat-37870.herokuapp.com/", class: "outlink position absolute bottom-0 right-0" %>
+        <%= link_to "Check It Out", "https://fathomless-retreat-37870.herokuapp.com/", 
+                    class: "outlink position absolute bottom-0 right-0 transition duration-200" %>
       </div>
     </article>
-    <aside class="col-span-3 xl:row-span-3 xl:px-10 xl:border-l-2 xl:border-white xl:border-opacity-10 ">
-      <h2 class="text-gray-300 text-4xl font-sourcesans font-light mb-5 text-center xl:text-left">Toolbox</h2>
+    <aside class="col-span-3 xl:row-span-3 xl:px-10 xl:border-l-2 xl:border-white xl:border-opacity-10 p-8">
+      <h2 class="text-gray-300 text-5xl font-sourcesans font-light mb-5 text-center xl:text-left">Toolbox</h2>
       <ul class="text-gray-300 font-sourcesans font-light text-center xl:text-left font-sourcesans font-light text-lg">
         <li>Linux</li>
         <li>Ruby on Rails</li>
