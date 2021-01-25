@@ -15,15 +15,15 @@
       and <span class="text-purple-400 font-normal">Chinese</span> (😃)
     </h3>
   </section>
-  <h2 class="text-gray-300 text-4xl font-sourcesans font-light mt-20 mb-5">Featured Projects</h1>
+  <h2 class="text-gray-300 text-4xl font-sourcesans font-light mt-20 mb-10">Featured Projects</h1>
   <section class="grid grid-rows-4 xl:grid-rows-3 grid-flow-col grid-cols-3 gap-10">
     <article class="card">
       <div class="card-image-container">
         <%= link_to image_tag("music.svg", alt: "music", class: "w-full h-full absolute inset-0"), "https://ancient-forest-35389.herokuapp.com/" %>
       </div>
       <div class="flex flex-auto flex-wrap content-center h-auto xl:min-h-full relative">
-        <h2 class="pl-8 w-full text-gray-300 text-5xl font-sourcesans font-light tracking-wide">OST</h3>
-        <p class="mt-3 text-gray-300 pl-8 font-sourcesans font-light text-lg">
+        <h2 class="pl-8 w-full text-gray-300 text-5xl font-sourcesans font-light tracking-wide mb-3">OST</h3>
+        <p class="text-gray-300 pl-8 font-sourcesans font-light text-lg">
           A user-driven database of original soundtracks (OSTs) 
           from popular Asian dramas. Discover and revisit music from 
           your favorite shows. Features:
@@ -43,8 +43,8 @@
         <%= link_to image_tag("dictionary.svg", alt: "dictionary", class: "w-full h-full absolute inset-0"), "https://morning-oasis-87823.herokuapp.com/" %>
       </div>
       <div class="card-text-container">
-        <h2 class="w-full text-gray-300 text-5xl font-sourcesans font-light tracking-wide">CD</h3>
-        <p class="mt-3 text-gray-300 font-sourcesans font-light text-lg">
+        <h2 class="w-full text-gray-300 text-5xl font-sourcesans font-light tracking-wide mb-3">CD</h3>
+        <p class="text-gray-300 font-sourcesans font-light text-lg">
           A simple Chinese-English dictionary based on <%= link_to "CC-CEDICT", "https://cc-cedict.org/wiki/", class: "underline text-blue-300" %>.
         </p>
         <%= link_to "Check It Out", "https://morning-oasis-87823.herokuapp.com/", 
@@ -59,14 +59,14 @@
         <h2 class="w-full text-white text-5xl font-sourcesans font-light tracking-wide">AQI</h3>
         <p class="mt-3 text-gray-300 font-sourcesans font-light text-lg">
           An Air Quality Index (AQI) monitoring tool, powered by data from the 
-          <%= link_to content_tag(:span, "World Air Quality Index", class:"italic"), "https://aqicn.org/contact/", class: "underline text-blue-300" %> project.
+          <%= link_to "World Air Quality Index", "https://aqicn.org/contact/", class: "underline text-blue-300" %> project.
         </p>
         <%= link_to "Check It Out", "https://fathomless-retreat-37870.herokuapp.com/", 
                     class: "outlink position absolute bottom-0 right-0 transition duration-200" %>
       </div>
     </article>
     <aside class="col-span-3 xl:row-span-3 xl:px-10 xl:border-l-2 xl:border-white xl:border-opacity-10 p-8">
-      <h2 class="text-gray-300 text-5xl font-sourcesans font-light mb-5 text-center xl:text-left">Toolbox</h2>
+      <h2 class="text-gray-300 text-5xl font-sourcesans font-light mb-3 text-center xl:text-left">Toolbox</h2>
       <ul class="text-gray-300 font-sourcesans font-light text-center xl:text-left font-sourcesans font-light text-lg">
         <li>Linux</li>
         <li>Ruby on Rails</li>
