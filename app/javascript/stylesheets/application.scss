@@ -11,7 +11,7 @@
 }
 
 .card {
-  @apply col-span-3 xl:col-span-2 flex flex-wrap xl:flex-nowrap xl:max-h-72 p-8 items-center bg-white bg-opacity-5;
+  @apply col-span-3 xl:col-span-2 flex flex-wrap xl:flex-nowrap h-auto xl:max-h-72 p-8 items-center bg-white bg-opacity-5;
 }
 
 .card-image-container {

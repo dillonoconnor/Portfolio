@@ -3,10 +3,10 @@
     <%= render "layouts/nav"%>
   </header>
   <section class="mt-20 leading-relaxed">
-    <h2 class="text-gray-300 text-5xl font-sourcesans font-light mb-2">
+    <h2 class="text-gray-300 text-4xl xl:text-5xl font-sourcesans font-light mb-2">
       I design and implement scalable, data-driven web applications
     </h2>
-    <h3 class="text-gray-500 text-3xl font-light">
+    <h3 class="text-gray-500 text-2xl xl:text-3xl font-light">
       and I'm fluent in 
       <span class="text-red-500 font-normal">Ruby</span>, 
       <span class="text-yellow-500 font-normal">HTML</span>,
@@ -21,21 +21,20 @@
       <div class="card-image-container">
         <%= link_to image_tag("music.svg", alt: "music", class: "w-full h-full absolute inset-0"), "https://ancient-forest-35389.herokuapp.com/" %>
       </div>
-      <div class="flex flex-auto flex-wrap content-center h-auto xl:min-h-full relative">
-        <h2 class="pl-8 w-full text-gray-300 text-5xl font-sourcesans font-light tracking-wide mb-3">OST</h3>
-        <p class="text-gray-300 pl-8 font-sourcesans font-light text-lg">
+      <div class="card-text-container">
+        <h2 class="xl:pl-8 w-full text-gray-300 text-5xl font-sourcesans font-light tracking-wide mb-3">OST</h3>
+        <p class="text-gray-300 xl:pl-8 font-sourcesans font-light text-lg">
           A user-driven database of original soundtracks (OSTs) 
-          from popular Asian dramas. Discover and revisit music from 
-          your favorite shows. Features:
+          from popular Asian dramas. Features:
         </p>
-        <ul class="text-gray-300 font-sourcesans list-disc list-inside mt-2 pl-8 font-light text-lg">
+        <ul class="text-gray-300 font-sourcesans list-disc list-inside mt-2 xl:pl-8 font-light text-lg">
           <li>Add new playlists</li>
           <li>Follow playlists on Spotify</li>
           <li>Like (and track liked) playlists</li>
-          <li>Listen to tracks on Spotify or YouTube</li>
+          <li>Listen on Spotify or YouTube</li>
         </ul>
         <%= link_to "Check It Out", "https://ancient-forest-35389.herokuapp.com/", 
-                    class: "outlink absolute bottom-0 right-0 transition duration-200" %>
+                    class: "outlink w-full xl:w-auto mt-6 xl:mt-0 xl:position xl:absolute xl:bottom-0 xl:right-0 transition duration-200" %>
       </div>
     </article>
     <article class="card">
@@ -45,10 +44,11 @@
       <div class="card-text-container">
         <h2 class="w-full text-gray-300 text-5xl font-sourcesans font-light tracking-wide mb-3">CD</h3>
         <p class="text-gray-300 font-sourcesans font-light text-lg">
-          A simple Chinese-English dictionary based on <%= link_to "CC-CEDICT", "https://cc-cedict.org/wiki/", class: "underline text-blue-300" %>.
+          A simple Chinese-English dictionary based on 
+          <%= link_to "CC-CEDICT", "https://cc-cedict.org/wiki/", class: "underline text-blue-300" %>.
         </p>
         <%= link_to "Check It Out", "https://morning-oasis-87823.herokuapp.com/", 
-                    class: "outlink position absolute bottom-0 right-0 transition duration-200" %>
+                    class: "outlink w-full xl:w-auto mt-6 xl:mt-0 xl:position xl:absolute xl:bottom-0 xl:right-0 transition duration-200" %>
       </div>
     </article>
     <article class="card">
@@ -62,7 +62,7 @@
           <%= link_to "World Air Quality Index", "https://aqicn.org/contact/", class: "underline text-blue-300" %> project.
         </p>
         <%= link_to "Check It Out", "https://fathomless-retreat-37870.herokuapp.com/", 
-                    class: "outlink position absolute bottom-0 right-0 transition duration-200" %>
+                    class: "outlink w-full xl:w-auto mt-6 xl:mt-0 xl:position xl:absolute xl:bottom-0 xl:right-0 transition duration-200" %>
       </div>
     </article>
     <aside class="col-span-3 xl:row-span-3 xl:px-10 xl:border-l-2 xl:border-white xl:border-opacity-10 p-8">
