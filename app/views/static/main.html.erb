@@ -1,90 +1,89 @@
-<div class="container mx-auto px-5">
-  <header>
-    <%= render "layouts/nav"%>
-  </header>
-  <section class="mt-20 leading-relaxed">
-    <h2 class="text-gray-300 text-4xl lg:text-5xl font-sourcesans font-light mb-2">
-      I design and implement scalable, data-driven web applications
-    </h2>
-    <h3 class="text-gray-500 text-2xl lg:text-3xl font-light">
-      and I'm fluent in 
-      <span class="text-red-500 font-normal">Ruby</span>, 
-      <span class="text-yellow-500 font-normal">HTML</span>,
-      <span class="text-blue-400 font-normal">CSS</span>, 
-      <span class="text-green-300 font-normal">JavaScript</span>,
-      and <span class="text-purple-400 font-normal">Chinese</span> (😃)
-    </h3>
-  </section>
-  <h2 class="text-gray-300 text-4xl font-sourcesans font-light mt-20 mb-10">Featured Projects</h1>
-  <section class="grid grid-rows-4 lg:grid-rows-3 grid-flow-col grid-cols-3 gap-10">
-    <article class="card">
-      <div class="card-image-container">
-        <%= link_to image_tag("music.svg", alt: "music", class: "w-full h-full absolute inset-0"), "https://ancient-forest-35389.herokuapp.com/" %>
-      </div>
-      <div class="card-text-container">
-        <h2 class="card-title">OST</h3>
-        <p class="card-text">
-          A user-driven database of original soundtracks (OSTs) 
-          from popular Asian dramas. Built with Rails, Bulma, and the Spotify API (via RSpotify). Features:
-        </p>
-        <ul class="text-gray-300 font-sourcesans list-disc list-inside mt-2 font-light text-lg">
-          <li>Add and view Spotify playlists</li>
-          <li>Like and follow playlists</li>
-          <li>Listen on Spotify or YouTube</li>
-        </ul>
-        <%= link_to "Check It Out", "https://ancient-forest-35389.herokuapp.com/", 
-                    class: "outlink lg:position lg:absolute lg:bottom-0 lg:right-0 transition duration-200" %>
-      </div>
-    </article>
-      <article class="card">
-        <div class="card-image-container">
-          <%= link_to image_tag("forest.svg", alt: "forest", class: "w-full h-full absolute inset-0"), "https://fathomless-retreat-37870.herokuapp.com/" %>
-        </div>
-        <div class="card-text-container">
-          <h2 class="card-title">AQI</h3>
-          <p class="card-text">
-            An Air Quality Index (AQI) monitoring tool, powered by data from the 
-            <%= link_to "World Air Quality Index", "https://aqicn.org/contact/", class: "text-blue-300" %> project.
-            Extends existing resources with additional data visualization.  Built with Rails, PostgreSQL, Chartkick, and Tailwind.
-          </p>
-          <%= link_to "Check It Out", "https://fathomless-retreat-37870.herokuapp.com/", 
-                      class: "outlink lg:position lg:absolute lg:bottom-0 lg:right-0 transition duration-200" %>
-        </div>
-    </article>
-    <article class="card">
-      <div class="card-image-container">
-        <%= link_to image_tag("dictionary.svg", alt: "dictionary", class: "w-full h-full absolute inset-0"), "https://morning-oasis-87823.herokuapp.com/" %>
-      </div>
-      <div class="card-text-container">
-        <h2 class="card-title">CD</h3>
-        <p class="card-text">
-          A simple Chinese-English dictionary based on 
-          <%= link_to "CC-CEDICT", "https://cc-cedict.org/wiki/", class: "text-blue-300" %>.
-          Currently built with Rails, PostgreSQL, Textacular, Bulma, and Regex magic.  
-          Upgrades planned to finetune search accuracy.
-        </p>
-        <%= link_to "Check It Out", "https://morning-oasis-87823.herokuapp.com/", 
-                    class: "outlink lg:position lg:absolute lg:bottom-0 lg:right-0 transition duration-200" %>
-      </div>
-    </article>
-    <aside class="col-span-3 lg:row-span-3 lg:px-10 lg:border-l-2 lg:border-white lg:border-opacity-10 p-8">
-      <h2 class="text-gray-300 text-5xl font-sourcesans font-light mb-3 text-center lg:text-left">Toolbox</h2>
-      <ul class="text-gray-300 font-sourcesans font-light text-center lg:text-left font-sourcesans font-light text-lg">
-        <li>Linux</li>
-        <li>Ruby on Rails</li>
-        <li>SQL & ActiveRecord</li>
-        <li>RSpec & Capybara </li>
-        <li>MongoDB & Mongoose</li>
-        <li>Node.js & Express</li>
-        <li>React & Redux</li>
-        <li>CSS Frameworks & Sass
-          <ul class="lg:ml-4 lg:list-inside">
-            <li>TailwindCSS</li>
-            <li>Bulma</li>
-            <li>Bootstrap</li>
-          </ul>
-        </li>
+<%= render "layouts/header"%>
+
+<section class="mt-20 leading-relaxed">
+  <h2 class="text-gray-300 text-4xl lg:text-5xl font-sourcesans font-light mb-2">
+    I design and implement scalable, data-driven web applications
+  </h2>
+  <h3 class="text-gray-500 text-2xl lg:text-3xl font-light">
+    and I'm fluent in 
+    <span class="text-red-500 font-normal">Ruby</span>, 
+    <span class="text-yellow-500 font-normal">HTML</span>,
+    <span class="text-blue-400 font-normal">CSS</span>, 
+    <span class="text-green-300 font-normal">JavaScript</span>,
+    and <span class="text-purple-400 font-normal">Chinese</span> (😃)
+  </h3>
+</section>
+<h2 class="text-gray-300 text-4xl font-sourcesans font-light mt-20 mb-10">Featured Projects</h1>
+<section class="grid grid-rows-4 lg:grid-rows-3 grid-flow-col grid-cols-3 gap-10">
+  <article class="card">
+    <div class="card-image-container">
+      <%= link_to image_tag("music.svg", alt: "music", class: "w-full h-full absolute inset-0"), "https://ancient-forest-35389.herokuapp.com/" %>
+    </div>
+    <div class="card-text-container">
+      <h2 class="card-title">OST</h3>
+      <p class="card-text">
+        A user-driven database of original soundtracks (OSTs) 
+        from popular Asian dramas. Built with Rails, Bulma, and the Spotify API (via RSpotify). Features:
+      </p>
+      <ul class="text-gray-300 font-sourcesans list-disc list-inside mt-2 font-light text-lg">
+        <li>Add and view Spotify playlists</li>
+        <li>Like and follow playlists</li>
+        <li>Listen on Spotify or YouTube</li>
       </ul>
-    </aside>
-  </section>
-</div>
+      <%= link_to "Check It Out", "https://ancient-forest-35389.herokuapp.com/", 
+                  class: "outlink lg:position lg:absolute lg:bottom-0 lg:right-0 transition duration-200" %>
+    </div>
+  </article>
+    <article class="card">
+      <div class="card-image-container">
+        <%= link_to image_tag("forest.svg", alt: "forest", class: "w-full h-full absolute inset-0"), "https://fathomless-retreat-37870.herokuapp.com/" %>
+      </div>
+      <div class="card-text-container">
+        <h2 class="card-title">AQI</h3>
+        <p class="card-text">
+          An Air Quality Index (AQI) monitoring tool, powered by data from the 
+          <%= link_to "World Air Quality Index", "https://aqicn.org/contact/", class: "text-blue-300" %> project.
+          Extends existing resources with additional data visualization.  Built with Rails, PostgreSQL, Chartkick, and Tailwind.
+        </p>
+        <%= link_to "Check It Out", "https://fathomless-retreat-37870.herokuapp.com/", 
+                    class: "outlink lg:position lg:absolute lg:bottom-0 lg:right-0 transition duration-200" %>
+      </div>
+  </article>
+  <article class="card">
+    <div class="card-image-container">
+      <%= link_to image_tag("dictionary.svg", alt: "dictionary", class: "w-full h-full absolute inset-0"), "https://morning-oasis-87823.herokuapp.com/" %>
+    </div>
+    <div class="card-text-container">
+      <h2 class="card-title">CD</h3>
+      <p class="card-text">
+        A simple Chinese-English dictionary based on 
+        <%= link_to "CC-CEDICT", "https://cc-cedict.org/wiki/", class: "text-blue-300" %>.
+        Currently built with Rails, PostgreSQL, Textacular, Bulma, and Regex magic.  
+        Upgrades planned to finetune search accuracy.
+      </p>
+      <%= link_to "Check It Out", "https://morning-oasis-87823.herokuapp.com/", 
+                  class: "outlink lg:position lg:absolute lg:bottom-0 lg:right-0 transition duration-200" %>
+    </div>
+  </article>
+  <aside class="col-span-3 lg:row-span-3 lg:px-10 lg:border-l-2 lg:border-white lg:border-opacity-10 p-8">
+    <h2 class="text-gray-300 text-5xl font-sourcesans font-light mb-3 text-center lg:text-left">Toolbox</h2>
+    <ul class="text-gray-300 font-sourcesans font-light text-center lg:text-left font-sourcesans font-light text-lg">
+      <li>Linux</li>
+      <li>Ruby on Rails</li>
+      <li>SQL & ActiveRecord</li>
+      <li>RSpec & Capybara </li>
+      <li>MongoDB & Mongoose</li>
+      <li>Node.js & Express</li>
+      <li>React & Redux</li>
+      <li>CSS Frameworks & Sass
+        <ul class="lg:ml-4 lg:list-inside">
+          <li>TailwindCSS</li>
+          <li>Bulma</li>
+          <li>Bootstrap</li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+</section>
+
+<%= render 'layouts/footer' %>
