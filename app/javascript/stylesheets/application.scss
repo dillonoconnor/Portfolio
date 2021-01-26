@@ -2,28 +2,38 @@
 @import "tailwindcss/components";
 
 /* Add any custom CSS here */
-.btn {
+.nav-btn {
   @apply opacity-75 mx-1.5;
 }
 
-.btn:hover {
+.nav-btn:hover {
   @apply opacity-100;
 }
 
 .card {
-  @apply col-span-3 xl:col-span-2 flex flex-wrap xl:flex-nowrap h-auto xl:max-h-72 p-8 items-center bg-white bg-opacity-5;
+  @apply col-span-3 lg:col-span-2 flex flex-wrap lg:flex-nowrap h-auto p-8 justify-between items-center
+       bg-white bg-opacity-5;
 }
 
 .card-image-container {
-  @apply xl:flex-none justify-start h-36 w-full xl:w-1/4 relative overflow-hidden rounded-md;
+  @apply lg:flex-none justify-start h-36 w-full lg:w-1/4 relative overflow-hidden rounded-md;
 }
 
 .card-text-container {
-  @apply flex flex-auto flex-wrap items-center content-center h-auto xl:min-h-full p-6 relative;
+  @apply flex flex-auto flex-wrap items-center content-center h-auto lg:min-h-full p-6 relative;
+}
+
+.card-title {
+  @apply w-full text-white text-5xl font-sourcesans font-light tracking-wide;
+}
+
+.card-text {
+  @apply mt-3 text-gray-300 font-sourcesans font-light text-lg;
 }
 
 .outlink {
-  @apply flex justify-center items-center p-2 text-gray-300 border-2 border-white border-opacity-30 font-sourcesans font-light;
+  @apply flex justify-center items-center p-2 text-gray-300 border-2 border-white border-opacity-30
+         font-sourcesans font-light mt-6 lg:mt-0 w-full lg:w-auto;
 }
 
 .outlink:hover {
